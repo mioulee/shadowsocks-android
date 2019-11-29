@@ -4,12 +4,15 @@ function try () {
 "$@" || exit -1
 }
 
-[ -z "$ANDROID_NDK_HOME" ] && ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
+[ -z "$ANDROID_NDK_HOME" ] && ANDROID_NDK_HOME=/Users/leeyu/android-ndk-r17c
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-MIN_API=$1
+MIN_API=21
 TARGET=$DIR/bin
 DEPS=$DIR/.deps
+
+
+echo $DEPS
 
 ANDROID_ARM_TOOLCHAIN=$DEPS/android-toolchain-${MIN_API}-arm
 ANDROID_ARM64_TOOLCHAIN=$DEPS/android-toolchain-${MIN_API}-arm64
@@ -36,6 +39,8 @@ if [ ! -f "$ANDROID_ARM64_CC" ]; then
     echo "Make standalone toolchain for ARM64 arch"
     $ANDROID_NDK_HOME/build/tools/make_standalone_toolchain.py --arch arm64 \
         --api $MIN_API --install-dir $ANDROID_ARM64_TOOLCHAIN
+
+
 fi
 
 if [ ! -f "$ANDROID_X86_CC" ]; then
@@ -53,6 +58,7 @@ if [ ! -f "$TARGET/armeabi-v7a/liboverture.so" ] || [ ! -f "$TARGET/arm64-v8a/li
 
     echo "Get dependences for overture"
     go get -v github.com/shadowsocks/overture/main
+
 
     echo "Cross compile overture for arm"
     if [ ! -f "$TARGET/armeabi-v7a/liboverture.so" ]; then

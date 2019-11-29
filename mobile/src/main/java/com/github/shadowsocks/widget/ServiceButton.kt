@@ -28,8 +28,8 @@ import androidx.annotation.DrawableRes
 import androidx.appcompat.widget.TooltipCompat
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
+import com.github.banananet.bg.BaseService
 import com.github.shadowsocks.R
-import com.github.shadowsocks.bg.BaseService
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 

@@ -34,9 +34,9 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.shadowsocks.R
-import com.github.shadowsocks.database.Profile
-import com.github.shadowsocks.database.ProfileManager
-import com.github.shadowsocks.utils.resolveResourceId
+import com.github.banananet.database.Profile
+import com.github.banananet.database.ProfileManager
+import com.github.banananet.utils.resolveResourceId
 
 class ConfigActivity : AppCompatActivity() {
     inner class ProfileViewHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListener {

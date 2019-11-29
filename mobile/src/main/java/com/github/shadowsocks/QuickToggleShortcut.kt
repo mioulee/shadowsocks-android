@@ -29,8 +29,10 @@ import androidx.core.content.getSystemService
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
-import com.github.shadowsocks.aidl.IShadowsocksService
-import com.github.shadowsocks.bg.BaseService
+import com.github.banananet.Core
+import com.github.banananet.ShadowsocksConnection
+import com.github.banananet.aidl.IShadowsocksService
+import com.github.banananet.bg.BaseService
 
 class QuickToggleShortcut : Activity(), ShadowsocksConnection.Interface {
     override fun onCreate(savedInstanceState: Bundle?) {

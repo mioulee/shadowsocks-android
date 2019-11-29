@@ -27,8 +27,8 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.github.banananet.preference.DataStore
 import com.github.shadowsocks.plugin.PluginContract
-import com.github.shadowsocks.preference.DataStore
 
 class ProfileConfigActivity : AppCompatActivity() {
     companion object {

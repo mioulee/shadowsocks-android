@@ -23,9 +23,9 @@ package com.github.shadowsocks.preference
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import com.github.banananet.plugin.PluginManager
 import com.github.shadowsocks.ProfileConfigActivity
 import com.github.shadowsocks.plugin.PluginContract
-import com.github.shadowsocks.plugin.PluginManager
 import com.takisoft.preferencex.EditTextPreferenceDialogFragmentCompat
 
 class PluginConfigurationDialogFragment : EditTextPreferenceDialogFragmentCompat() {

@@ -23,8 +23,8 @@ package com.github.shadowsocks.tasker
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.github.shadowsocks.Core
-import com.github.shadowsocks.database.ProfileManager
+import com.github.banananet.Core
+import com.github.banananet.database.ProfileManager
 
 class ActionListener : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {

@@ -24,12 +24,14 @@ import android.os.Build
 import android.os.Bundle
 import androidx.preference.Preference
 import androidx.preference.SwitchPreference
-import com.github.shadowsocks.bg.BaseService
-import com.github.shadowsocks.preference.DataStore
-import com.github.shadowsocks.utils.DirectBoot
-import com.github.shadowsocks.utils.Key
-import com.github.shadowsocks.utils.TcpFastOpen
-import com.github.shadowsocks.utils.remove
+import com.github.banananet.BootReceiver
+import com.github.banananet.Core
+import com.github.banananet.bg.BaseService
+import com.github.banananet.preference.DataStore
+import com.github.banananet.utils.DirectBoot
+import com.github.banananet.utils.Key
+import com.github.banananet.utils.TcpFastOpen
+import com.github.banananet.utils.remove
 import com.takisoft.preferencex.PreferenceFragmentCompat
 
 class GlobalSettingsPreferenceFragment : PreferenceFragmentCompat() {

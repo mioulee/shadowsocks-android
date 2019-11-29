@@ -23,8 +23,8 @@ package com.github.shadowsocks
 import android.app.Application
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatDelegate
+import com.github.banananet.Core
 import com.github.shadowsocks.preference.BottomSheetPreferenceDialogFragment
-import com.github.shadowsocks.preference.DataStore
 import com.github.shadowsocks.preference.IconListPreference
 import com.takisoft.preferencex.PreferenceFragmentCompat
 

@@ -42,12 +42,13 @@ import androidx.core.content.getSystemService
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.github.shadowsocks.Core.app
-import com.github.shadowsocks.database.ProfileManager
-import com.github.shadowsocks.preference.DataStore
-import com.github.shadowsocks.utils.DirectBoot
-import com.github.shadowsocks.utils.Key
-import com.github.shadowsocks.utils.thread
+import com.github.banananet.Core
+import com.github.banananet.Core.app
+import com.github.banananet.database.ProfileManager
+import com.github.banananet.preference.DataStore
+import com.github.banananet.utils.DirectBoot
+import com.github.banananet.utils.Key
+import com.github.banananet.utils.thread
 import com.google.android.material.snackbar.Snackbar
 import java.util.concurrent.atomic.AtomicBoolean
 

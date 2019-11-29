@@ -36,11 +36,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.getSystemService
 import androidx.core.util.forEach
 import com.crashlytics.android.Crashlytics
-import com.github.shadowsocks.database.Profile
-import com.github.shadowsocks.database.ProfileManager
-import com.github.shadowsocks.utils.datas
-import com.github.shadowsocks.utils.openBitmap
-import com.github.shadowsocks.utils.printLog
+import com.github.banananet.Core
+import com.github.banananet.database.Profile
+import com.github.banananet.database.ProfileManager
+import com.github.banananet.utils.datas
+import com.github.banananet.utils.openBitmap
+import com.github.banananet.utils.printLog
 import com.google.android.gms.common.GoogleApiAvailability
 import com.google.android.gms.samples.vision.barcodereader.BarcodeCapture
 import com.google.android.gms.samples.vision.barcodereader.BarcodeGraphic

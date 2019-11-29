@@ -26,10 +26,10 @@ import android.util.AttributeSet
 import android.view.View
 import android.widget.TextView
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import com.github.banananet.bg.BaseService
+import com.github.banananet.utils.HttpsTest
 import com.github.shadowsocks.MainActivity
 import com.github.shadowsocks.R
-import com.github.shadowsocks.bg.BaseService
-import com.github.shadowsocks.utils.HttpsTest
 import com.google.android.material.bottomappbar.BottomAppBar
 
 class StatsBar @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,

@@ -24,8 +24,8 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.core.os.bundleOf
+import com.github.banananet.database.ProfileManager
 import com.github.shadowsocks.R
-import com.github.shadowsocks.database.ProfileManager
 import com.twofortyfouram.locale.api.Intent as ApiIntent
 
 class Settings(bundle: Bundle?) {

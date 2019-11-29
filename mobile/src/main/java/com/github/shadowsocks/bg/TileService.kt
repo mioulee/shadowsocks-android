@@ -26,12 +26,13 @@ import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService as BaseTileService
 import androidx.annotation.RequiresApi
 import androidx.core.content.getSystemService
-import com.github.shadowsocks.Core
+import com.github.banananet.Core
+import com.github.banananet.ShadowsocksConnection
+import com.github.banananet.aidl.IShadowsocksService
+import com.github.banananet.aidl.IShadowsocksServiceCallback
+import com.github.banananet.bg.BaseService
+import com.github.banananet.preference.DataStore
 import com.github.shadowsocks.R
-import com.github.shadowsocks.ShadowsocksConnection
-import com.github.shadowsocks.aidl.IShadowsocksService
-import com.github.shadowsocks.aidl.IShadowsocksServiceCallback
-import com.github.shadowsocks.preference.DataStore
 
 @RequiresApi(24)
 class TileService : BaseTileService(), ShadowsocksConnection.Interface {

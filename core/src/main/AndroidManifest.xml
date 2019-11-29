@@ -1,12 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.github.shadowsocks.core"
+          package="com.github.banananet.core"
           android:installLocation="internalOnly">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
@@ -16,7 +17,7 @@
     <application
         android:icon="@mipmap/ic_launcher"
         android:allowBackup="true"
-        android:backupAgent="com.github.shadowsocks.ConfigBackupHelper"
+        android:backupAgent="com.github.banananet.ConfigBackupHelper"
         android:fullBackupContent="@xml/backup_descriptor"
         android:fullBackupOnly="true"
         android:label="@string/app_name"
@@ -32,7 +33,7 @@
                    android:value="false"/>
 
         <service
-            android:name="com.github.shadowsocks.bg.VpnService"
+            android:name="com.github.banananet.bg.VpnService"
             android:process=":bg"
             android:directBootAware="true"
             android:label="@string/app_name"
@@ -44,27 +45,27 @@
         </service>
 
         <service
-            android:name="com.github.shadowsocks.bg.TransproxyService"
+            android:name="com.github.banananet.bg.TransproxyService"
             android:process=":bg"
             android:directBootAware="true"
             android:exported="false">
         </service>
 
         <service
-            android:name="com.github.shadowsocks.bg.ProxyService"
+            android:name="com.github.banananet.bg.ProxyService"
             android:process=":bg"
             android:directBootAware="true"
             android:exported="false">
         </service>
 
         <activity
-            android:name="com.github.shadowsocks.VpnRequestActivity"
+            android:name="com.github.banananet.VpnRequestActivity"
             android:theme="@style/Theme.AppCompat.Translucent"
             android:excludeFromRecents="true"
             android:taskAffinity=""
             android:launchMode="singleTask"/>
 
-        <receiver android:name="com.github.shadowsocks.BootReceiver"
+        <receiver android:name="com.github.banananet.BootReceiver"
                   android:process=":bg"
                   android:directBootAware="true"
                   android:enabled="false">

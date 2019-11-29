@@ -3,6 +3,7 @@ import org.apache.tools.ant.taskdefs.condition.Os
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     buildToolsVersion rootProject.buildToolsVersion
@@ -40,6 +41,10 @@ android {
             path 'src/main/jni/Android.mk'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
 }
 
 task goBuild(type: Exec) {
@@ -69,7 +74,7 @@ tasks.whenTaskAdded { task ->
 }
 
 dependencies {
-    api project(':plugin')
+    compile project(':plugin')
     api "android.arch.work:work-runtime-ktx:$workVersion"
     api "androidx.preference:preference:$androidxVersion"
     api "androidx.room:room-runtime:$roomVersion"
